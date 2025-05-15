@@ -1,0 +1,86 @@
+COMPARACIÓN DE ALGORITMOS DE PLANIFICACIÓN
+Fecha: 2025-05-14 22:21:49
+
+=== Algoritmo: Earliest Deadline First ===
+Entregas completadas: 10
+
+ID_Entrega,Vehículo_Asignado,Hora_Inicio,Duración,Prioridad,Coordenada_Origen_X,Coordenada_Origen_Y,Coordenada_Destino_X,Coordenada_Destino_Y
+E001,V006,10:29,120,3,10.50,20.30,45.20,55.40
+E002,V004,15:21,90,4,12.10,18.70,30.20,40.40
+E003,V003,10:00,180,2,9.80,22.50,60.10,70.50
+E004,V004,10:16,60,5,5.60,15.30,35.10,38.70
+E005,V001,09:00,120,3,22.30,30.50,60.00,80.00
+E006,V001,12:27,150,2,40.00,10.00,65.00,15.00
+E007,V002,11:00,180,4,18.00,25.00,55.00,65.00
+E008,V004,11:28,120,1,25.00,35.00,80.00,85.00
+E009,V006,08:16,90,3,5.00,5.00,45.00,10.00
+E010,V006,13:29,90,2,15.00,15.00,55.00,25.00
+
+MÉTRICAS DE RENDIMIENTO:
+Entregas_Completadas,10
+Tiempo_Total_Espera,1276
+Distancia_Total,858.07
+Satisfacción_Cliente,100.00
+Utilización_Recursos,71.35
+Tiempo_Ejecución,0.0000
+
+=== Algoritmo: Shortest Processing Time ===
+Entregas completadas: 10
+
+ID_Entrega,Vehículo_Asignado,Hora_Inicio,Duración,Prioridad,Coordenada_Origen_X,Coordenada_Origen_Y,Coordenada_Destino_X,Coordenada_Destino_Y
+E001,V006,12:45,120,3,10.50,20.30,45.20,55.40
+E002,V004,11:52,90,4,12.10,18.70,30.20,40.40
+E003,V003,10:00,180,2,9.80,22.50,60.10,70.50
+E004,V004,10:16,60,5,5.60,15.30,35.10,38.70
+E005,V001,09:00,120,3,22.30,30.50,60.00,80.00
+E006,V001,12:27,150,2,40.00,10.00,65.00,15.00
+E007,V002,11:00,180,4,18.00,25.00,55.00,65.00
+E008,V004,13:30,120,1,25.00,35.00,80.00,85.00
+E009,V006,08:16,90,3,5.00,5.00,45.00,10.00
+E010,V006,10:22,90,2,15.00,15.00,55.00,25.00
+
+MÉTRICAS DE RENDIMIENTO:
+Entregas_Completadas,10
+Tiempo_Total_Espera,1138
+Distancia_Total,779.11
+Satisfacción_Cliente,100.00
+Utilización_Recursos,68.27
+Tiempo_Ejecución,0.0000
+
+=== Algoritmo: Nearest Neighbor ===
+Entregas completadas: 9
+
+ID_Entrega,Vehículo_Asignado,Hora_Inicio,Duración,Prioridad,Coordenada_Origen_X,Coordenada_Origen_Y,Coordenada_Destino_X,Coordenada_Destino_Y
+E001,V005,09:00,120,3,10.50,20.30,45.20,55.40
+E002,V004,10:20,90,4,12.10,18.70,30.20,40.40
+E003,V006,10:00,180,2,9.80,22.50,60.10,70.50
+E004,V002,09:12,60,5,5.60,15.30,35.10,38.70
+E005,V002,10:48,120,3,22.30,30.50,60.00,80.00
+E006,V001,10:00,150,2,40.00,10.00,65.00,15.00
+E007,V003,11:44,180,4,18.00,25.00,55.00,65.00
+E009,V001,08:08,90,3,5.00,5.00,45.00,10.00
+E010,V003,09:30,90,2,15.00,15.00,55.00,25.00
+
+MÉTRICAS DE RENDIMIENTO:
+Entregas_Completadas,9
+Tiempo_Total_Espera,342
+Distancia_Total,537.46
+Satisfacción_Cliente,96.55
+Utilización_Recursos,55.10
+Tiempo_Ejecución,0.0001
+
+
+=== TABLA COMPARATIVA DE ALGORITMOS ===
+------------------------------------------------------------
+Algoritmo                ,Completadas,Distancia ,Satisfacción,Tiempo Ejec.
+------------------------------------------------------------
+Earliest Deadline First  ,        10,    858.07,    100.00%,  0.000003
+Shortest Processing Time ,        10,    779.11,    100.00%,  0.000002
+Nearest Neighbor         ,         9,    537.46,     96.55%,  0.000078
+------------------------------------------------------------
+
+CONCLUSIONES - MEJORES ALGORITMOS POR CATEGORÍA:
+- Mayor número de entregas: Earliest Deadline First (10)
+- Menor distancia total: Nearest Neighbor (537.46 km)
+- Mayor satisfacción del cliente: Earliest Deadline First (100.00%)
+- Menor tiempo de ejecución: Shortest Processing Time (0.000002 s)

@@ -1,0 +1,5 @@
+zone_id,start_hour,start_min,end_hour,end_min
+1,7,30,9,0
+1,17,0,19,0
+2,12,0,14,0
+3,8,0,11,30
