@@ -1,24 +1,3 @@
-# 🚚 Sistema de Asignación de Recursos (Scheduling)
-
-## Grupo  - Diseño de Algoritmos
-
----
-
-### 👨‍💻 Integrantes del Equipo
-
-**Claudio Matulich**
-- Ingeniería en Computación
-- cmatulic@umag.cl
-
-**Francisco Miranda**
-- Ingeniería en Computación
-- fmirchav@umag.cl
-
-**Ignacio Contreras**
-- Ingeniería en Computación
-- igcontre@umag.cl
-
----
 
 ## 🎯 Objetivo del Proyecto
 
